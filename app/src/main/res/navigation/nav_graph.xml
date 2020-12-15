@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/bookListFragment">
+
+    <fragment
+        android:id="@+id/bookListFragment"
+        android:name="cat.itb.readbooks.BookListFragment"
+        android:label="BookListFragment" >
+        <action
+            android:id="@+id/action_bookListFragment_to_bookDataFragment_update"
+            app:destination="@id/bookDataFragment" />
+        <action
+            android:id="@+id/action_bookListFragment_to_bookDataFragment_add"
+            app:destination="@id/bookDataFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/bookDataFragment"
+        android:name="cat.itb.readbooks.BookDataFragment"
+        android:label="BookDataFragment">
+        <argument
+            android:name="book"
+            app:argType="cat.itb.readbooks.Book"
+            app:nullable="true"/>
+        <action
+            android:id="@+id/action_updateBook_to_bookListFragment"
+            app:destination="@id/bookListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bookDataFragment2"
+        android:name="cat.itb.readbooks.BookDataFragment"
+        android:label="BookDataFragment">
+        <action
+            android:id="@+id/action_addBook_to_bookListFragment"
+            app:destination="@id/bookListFragment" />
+    </fragment>
+
+</navigation>

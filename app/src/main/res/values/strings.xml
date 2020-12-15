@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Read Books</string>
+
+    <string name="tv_datatitle">TITLE</string>
+    <string name="tv_dataauthor">AUTHOR</string>
+    <string name="tv_datastatus">STATUS</string>
+    <string name="tv_rate">RATE</string>
+    <string name="hint_title">Introduce the title</string>
+    <string name="hint_author">Introduce the author</string>
+    <string name="bt_want">Want to read</string>
+    <string name="bt_reading">Reading</string>
+    <string name="bt_read">Read</string>
+    <string name="bt_confirm_add">Add</string>
+    <string name="bt_confirm_update">Update</string>
+</resources>
